@@ -1,0 +1,33 @@
+﻿<Properties StartupConfiguration="{7FF19D1E-5B4A-4F82-A271-64BBF5E991DC}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="GithubEmojis/Pages/Index.cshtml">
+    <Files>
+      <File FileName="GithubEmojis/Pages/Shared/_Layout.cshtml" Line="1" Column="1" />
+      <File FileName="GithubEmojis/wwwroot/css/site.css" Line="23" Column="2" />
+      <File FileName="GithubEmojis/Pages/Index.cshtml" Line="11" Column="7" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="GithubEmojis" expanded="True">
+            <Node name="GithubEmojis" expanded="True">
+              <Node name="Pages" expanded="True">
+                <Node name="Shared" expanded="True" />
+                <Node name="Index.cshtml" selected="True" />
+              </Node>
+              <Node name="wwwroot" expanded="True">
+                <Node name="css" expanded="True" />
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.GithubEmojis PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>

@@ -1,0 +1,42 @@
+﻿<Properties StartupConfiguration="{7FF19D1E-5B4A-4F82-A271-64BBF5E991DC}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="GithubEmojis/Pages/Shared/_Layout.cshtml">
+    <Files>
+      <File FileName="GithubEmojis/Pages/Shared/_Layout.cshtml" Line="14" Column="1" />
+      <File FileName="GithubEmojis/Emoji.cs" Line="17" Column="1" />
+      <File FileName="GithubEmojis/GithubEmojiService.cs" Line="36" Column="1" />
+      <File FileName="GithubEmojis/IGithubEmojiService.cs" Line="12" Column="2" />
+      <File FileName="GithubEmojis/Startup.cs" Line="41" Column="10" />
+      <File FileName="GithubEmojis/Pages/Index.cshtml" Line="11" Column="7" />
+      <File FileName="GithubEmojis/Pages/Index.cshtml.cs" Line="1" Column="1" />
+      <File FileName="GithubEmojis/wwwroot/css/site.min.css" Line="1" Column="231" />
+      <File FileName="GithubEmojis/wwwroot/css/site.css" Line="23" Column="2" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="GithubEmojis" expanded="True">
+            <Node name="GithubEmojis" expanded="True">
+              <Node name="Dependencies" expanded="True" />
+              <Node name="Pages" expanded="True">
+                <Node name="Shared" expanded="True">
+                  <Node name="_Layout.cshtml" selected="True" />
+                </Node>
+              </Node>
+              <Node name="Properties" expanded="True" />
+              <Node name="wwwroot" expanded="True">
+                <Node name="css" expanded="True" />
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.GithubEmojis PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
