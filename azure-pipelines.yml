@@ -49,19 +49,6 @@ steps:
       src\*.testsettings
     TargetFolder: '$(build.artifactstagingdirectory)'
 
-##### DEPLOY A WEB APP ########
-- script: dotnet publish --output $(Build.ArtifactStagingDirectory)
-
-- task: DotNetCoreCLI@2
-  inputs:
-    command: publish
-    # our repository seems has no web project
-    publishWebProjects: False
-    # We should specify your .csproj in project(s) option.
-    projects: "GithubEmojis.csproj" 
-    arguments: '--configuration $(BuildConfiguration) --output $(Build.ArtifactStagingDirectory)'
-    zipAfterPublish: True
-
 # --- this code takes all the files in $(Build.ArtifactStagingDirectory) and uploads them as an artifact of your build.
 - task: PublishBuildArtifacts@1
   displayName : 'Publish artifacts: drop'
