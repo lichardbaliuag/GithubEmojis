@@ -7,7 +7,8 @@ trigger:
 - master
 
 pool:
-  vmImage: 'windows-latest'
+  #vmImage: 'windows-latest'
+  vmImage: 'VS2017-Win2016'
 
 variables:
   solution: '**/*.sln'
@@ -21,6 +22,13 @@ steps:
   inputs:
     restoreSolution: '$(solution)'
 
+# --- Do this before all your .NET Core tasks
+#steps:
+#- task: DotNetCoreInstaller@0
+#  inputs:
+#    version: '2.1.300' # replace this value with the version that you need for your project
+# --- ...
+
 - task: VSBuild@1
   inputs:
     solution: '$(solution)'
@@ -33,9 +41,25 @@ steps:
     platform: '$(buildPlatform)'
     configuration: '$(buildConfiguration)'
 
-  # this code takes all the files in $(Build.ArtifactStagingDirectory) and uploads them as an artifact of your build.
+- task: PublishSymbols@1
+  displayName : 'Publish symbols path :'
+  inputs:
+    SearchPattern: '**\bin\**\.*.pdb'
+    continueOnError: true
+
+- task: CopyFile@1
+  displayName : 'Copy files to: $(build.artifactstagingdirectory)'
+  inputs :
+    SourceFolder : '$(build.sourcesdirectory)'
+    contents : |
+      **\bin\$(BuildConfiguration)\**
+      src\*.testsettings
+    TargetFolder: '$(build.artifactstagingdirectory)'
+
+# --- this code takes all the files in $(Build.ArtifactStagingDirectory) and uploads them as an artifact of your build.
 - task: PublishBuildArtifacts@1
-  displayName : 'Publish artifacts'
+  displayName : 'Publish artifacts: drop'
   inputs:
     pathtoPublish: '$(Build.ArtifactStagingDirectory)' 
     artifactName: 'lichardbaliuag.GithubEmojis'
+  condition : succeededOrFailed()
