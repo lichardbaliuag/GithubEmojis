@@ -11,8 +11,7 @@ stages:
   jobs:
     - job: Build
       pool:
-        #vmImage: 'windows-latest'
-        vmImage: 'VS2017-Win2016'
+        #vmImage: 'VS2017-Win2016'
         name: Hosted VS2017
         demands:
         - msbuild
