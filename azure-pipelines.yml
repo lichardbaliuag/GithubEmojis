@@ -37,10 +37,12 @@ steps:
 
 # Added 03: Begin
 - task: AzureWebApp@1
-  displayName: GiihubEmojis Deploy
+  displayName: GithubEmojis Deploy
   inputs:
     azureSubscription: $(azureSubscription)
-    appName: samplewebapp
+    appName: GithubEmojis
+    slotName: staging
+    ResourceGroupName: GithubEmojisRG
     package: $(System.DefaultWorkingDirectory)/**/*.zip
 # Added 03: End
 
@@ -49,4 +51,4 @@ steps:
   displayName: 'Publish artifacts'
   inputs:
     pathtoPublish: '$(Build.ArtifactStagingDirectory)' 
-    artifactName: 'lichardbaliuag.GithubEmojis'
+    artifactName: 'GithubEmojis'
