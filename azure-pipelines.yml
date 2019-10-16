@@ -36,14 +36,14 @@ steps:
     configuration: '$(buildConfiguration)'
 
 # Added 03: Begin
-- task: AzureWebApp@1
-  displayName: GithubEmojis Deploy
-  inputs:
-    azureSubscription: $(azureSubscription)
-    appName: GithubEmojis
-    slotName: staging
-    ResourceGroupName: GithubEmojisRG
-    package: $(System.DefaultWorkingDirectory)/**/*.zip
+#- task: AzureWebApp@1
+#  displayName: GithubEmojis Deploy
+#  inputs:
+#    azureSubscription: $(azureSubscription)
+#    appName: GithubEmojis
+#    slotName: staging
+#    ResourceGroupName: GithubEmojisRG
+#    package: $(System.DefaultWorkingDirectory)/**/*.zip
 # Added 03: End
 
 # this code takes all the files in $(Build.ArtifactStagingDirectory) and uploads them as an artifact of your build.
